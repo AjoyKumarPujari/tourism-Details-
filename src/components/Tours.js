@@ -2,14 +2,14 @@ import React from 'react'
 import Card from './Card';
 function Tours ({tours, removeTour})  {
   return (
-    <div>
-        <div>
-            <h2>Plan with Us</h2>
+    <div className="container">
+        <div className='title'>
+            <h2>Book Your Next Dream Destination</h2>
         </div>
-        <div>
+        <div className='cards'>
            {
              tours.map( (tour) => {
-                return <Card {...tour} removeTour={removeTour}> </Card>
+                return <Card key={tour.id} {...tour} removeTour={removeTour}> </Card>
              })
            }
         </div>

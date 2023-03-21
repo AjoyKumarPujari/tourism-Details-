@@ -14,7 +14,7 @@ const App = () => {
     return(
       <div className="refresh">
           <h1>No Tours Left</h1>
-          <button onClick={()=> setTours(data)}>
+          <button className="btn-white" onClick={()=> setTours(data)}>
             Refresh
           </button>
       </div>
@@ -23,7 +23,7 @@ const App = () => {
 
 
   return (
-    <div>
+    <div className="App">
       
       <Tours tours={tours} removeTour={removeTour}></Tours>
 
